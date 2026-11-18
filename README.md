@@ -84,7 +84,6 @@ scripts/c21.sh test         # 运行单元测试
 ```
 
 运行镜像由 `docker/Dockerfile` 构建，基础镜像 `c21/ros2-humble:nav` 需要自行准备。
-Jetson 访问不了 GitHub/PyPI，Dockerfile 用的是清华镜像。
 
 视觉跟随的人体检测跑在宿主机（容器里没有 GPU 访问），需要 CUDA 版 torch 和 ultralytics：
 
